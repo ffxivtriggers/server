@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NamelessFaceless/pentavoid-triggers-server.git"
+    "url": "git+https://github.com/ffxivtriggers/server.git"
   },
   "author": "Henrique Cezar Godoy Bueno <killchainer@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/NamelessFaceless/pentavoid-triggers-server/issues"
+    "url": "https://github.com/ffxivtriggers/server/issues"
   },
-  "homepage": "https://github.com/NamelessFaceless/pentavoid-triggers-server#readme",
+  "homepage": "https://github.com/ffxivtriggers/server#readme",
   "dependencies": {
     "koa": "^2.5.3"
   },
