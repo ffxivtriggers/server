@@ -1,0 +1,26 @@
+{
+  "name": "pentavoid-triggers-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NamelessFaceless/pentavoid-triggers-server.git"
+  },
+  "author": "Henrique Cezar Godoy Bueno <killchainer@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NamelessFaceless/pentavoid-triggers-server/issues"
+  },
+  "homepage": "https://github.com/NamelessFaceless/pentavoid-triggers-server#readme",
+  "dependencies": {
+    "koa": "^2.5.3"
+  },
+  "devDependencies": {
+    "eslint": "^5.6.1"
+  }
+}

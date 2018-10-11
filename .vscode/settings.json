@@ -1,0 +1,6 @@
+{
+    "eslint.packageManager": "yarn",
+    "files.eol": "\n",
+    "eslint.autoFixOnSave": true,
+    "editor.tabSize": 2
+}
