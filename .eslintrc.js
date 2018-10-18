@@ -15,13 +15,15 @@ module.exports = {
             "error",
             "unix"
         ],
-        "quotes": [
-            "error",
-            "single"
-        ],
         "semi": [
             "error",
             "always"
+        ],
+        "no-console": [
+            "off",
+        ],
+        "no-unused-vars": [
+            "off",
         ]
     }
 };

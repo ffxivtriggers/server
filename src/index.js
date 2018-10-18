@@ -1,8 +1,5 @@
-const Koa = require('koa');
-const app = new Koa();
+//require('dotenv').config();
+const server = require('./server');
 
-app.use(async ctx => {
-  ctx.body = 'Hello World';
-});
-
-app.listen(3000);
+const port = process.env.PORT || 3000;
+server.listen(port, () => console.log(`API server started on ${port}`));
