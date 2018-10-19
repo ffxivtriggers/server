@@ -6,7 +6,7 @@ exports.seed = function(knex, Promise) {
       .then(function () {
       // Inserts seed entries
         return knex('comments').insert([
-          {id: 1, author_id: '2', trigger_id: '1', comment: 'this is a comment test'},
+          {id: 1, author_id: 2, trigger_id: 1, comment: 'this is a comment test', created_at: knex.fn.now(), updated_at: knex.fn.now()},
         ]);
       });
   }

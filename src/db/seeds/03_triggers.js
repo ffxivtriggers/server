@@ -12,9 +12,10 @@ exports.seed = function(knex, Promise) {
             type: 'Vanilla ACT', 
             content:'<Trigger R="a ready check" SD="Food Check" ST="3" CR="F" C="General" T="F" TN="" Ta="F" />',
             description: 'This is a Trigger test description',
-            comment_count: '1',
-            star_count: '0',
-            author_id: '1',
+            comment_count: 1,
+            star_count: 0,
+            author_id: 1,
+            created_at: knex.fn.now(), updated_at: knex.fn.now()
           },
           {
             id: 2, 
@@ -22,9 +23,10 @@ exports.seed = function(knex, Promise) {
             type: 'Vanilla ACT', 
             content:'<Trigger R="a ready check" SD="Food Check" ST="3" CR="F" C="General" T="F" TN="" Ta="F" />',
             description: 'This is a Trigger test description',
-            comment_count: '0',
-            star_count: '0',
-            author_id: '2',
+            comment_count: 1,
+            star_count: 0,
+            author_id: 2,
+            created_at: knex.fn.now(), updated_at: knex.fn.now()
           },
           {
             id: 3, 
@@ -32,9 +34,10 @@ exports.seed = function(knex, Promise) {
             type: 'Triggernometry', 
             content:'<Trigger R="a ready check" SD="Food Check" ST="3" CR="F" C="General" T="F" TN="" Ta="F" />',
             description: 'This is a Trigger test description',
-            comment_count: '0',
-            star_count: '0',
-            author_id: '3',
+            comment_count: 0,
+            star_count: 0,
+            author_id:  3,
+            created_at: knex.fn.now(), updated_at: knex.fn.now()
           },
         ]);
       });

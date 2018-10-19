@@ -1,8 +1,8 @@
 
 exports.up = function(knex, Promise) {
   return knex.schema.createTableIfNotExists('stars', (table) => {
-    table.increments();
-    table.integer('starred_by').notNullable().references('id').inTable('users').defaultTo(0);
+    table.increments().primary();
+    table.integer('starred_by').notNullable().references('id').inTable('users').defaultTo(0).onDelete('CASCADE');
     table.timestamp('created_at').defaultTo(knex.fn.now());
     table.timestamp('updated_at').defaultTo(knex.fn.now());
   });

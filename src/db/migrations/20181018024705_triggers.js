@@ -1,9 +1,9 @@
 
 exports.up = function(knex, Promise) {
   return knex.schema.createTableIfNotExists('triggers', (table) => {
-    table.increments();
+    table.increments().primary();
     table.string('title').notNullable();
-    table.integer('author_id').notNullable().references('id').inTable('users');
+    table.integer('author_id').notNullable().references('id').inTable('users').onDelete('CASCADE');
     table.string('type').notNullable().defaultTo('Vanilla ACT');
     table.string('content').notNullable();
     table.string('description').notNullable();
